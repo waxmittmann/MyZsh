@@ -1,7 +1,7 @@
 #### My stuff ####
 # Go places
 alias goh='cd ~'
-alias gonote='cd ~/Notes'
+alias gonote='cd ~/Workspaces/Notes'
 
 alias gows='cd ~/Workspaces'
 alias gop='cd ~/Workspaces/Projects'
@@ -14,6 +14,40 @@ alias srcsh='source ~/.zshrc'
 alias opensh='atom ~/.oh-my-zsh/custom/customs.zsh'
 alias catsh='cat ~/.oh-my-zsh/custom/customs.zsh'
 alias gosh='cd ~/.oh-my-zsh/custom/'
+alias savesh=''
+
+# Github
+alias gitinfo='curl https://api.github.com -u $GITHUB_USER:$GITHUB_PASS'
+alias gitrli='curl https://api.github.com/user/repos -u $GITHUB_USER:$GITHUB_PASS'
+
+# Sbt
+# TODO: Doesn't work
+alias sbtopts='eval export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M  -Duser.timezone=GMT"'
+
+# TODO implement: https://developer.github.com/v3/repos/
+# function git_rc_r() {
+#   curl https://api.github.com/user/repos -u $GITHUB_USER:$GITHUB_PASS -X POST -d \'
+#   {
+#     "name": "Hello-World",
+#     "description": "This is your first repository",
+#     "homepage": "https://github.com",
+#     "private": false,
+#     "has_issues": true,
+#     "has_projects": true,
+#     "has_wiki": true
+#   }\'
+# }
+
+# alias gitrcr='curl https://api.github.com/user/repos -u $GITHUB_USER:$GITHUB_PASS -X POST -d \'
+# {
+#   "name": "Hello-World",
+#   "description": "This is your first repository",
+#   "homepage": "https://github.com",
+#   "private": false,
+#   "has_issues": true,
+#   "has_projects": true,
+#   "has_wiki": true
+# }\''
 
 # Become postgres
 alias pgu='sudo su postgres'
@@ -44,3 +78,7 @@ tnamef() {
   PS1=${ORIG}${TITLE}
 }
 alias tname=tnamef
+
+#export PATH="/home/damxam/Workspaces/Libraries/anaconda3/bin:$PATH"
+export PATH="/home/damxam/Workspaces/Libraries/bin:/home/damxam/Workspaces/Libraries/anaconda3/bin:$PATH"
+export AIRFLOW_HOME=~/Workspaces/Libraries/airflow
