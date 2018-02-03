@@ -82,3 +82,4 @@ alias tname=tnamef
 #export PATH="/home/damxam/Workspaces/Libraries/anaconda3/bin:$PATH"
 export PATH="/home/damxam/Workspaces/Libraries/bin:/home/damxam/Workspaces/Libraries/anaconda3/bin:$PATH"
 export AIRFLOW_HOME=~/Workspaces/Libraries/airflow
+export JAVA_HOME="/usr/lib/jvm/java-8-oracle/"
