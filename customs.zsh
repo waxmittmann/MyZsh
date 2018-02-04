@@ -65,6 +65,9 @@ alias npmi='npm install'
 alias npms='npm start'
 alias bower='bower install'
 
+# XClip (command output to clipboard)
+alias clip="xclip -selection c"
+
 function gcheatfn () { catcheat | grep $1 }
 alias gcheat=gcheatfn
 
