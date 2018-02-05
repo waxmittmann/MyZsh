@@ -68,6 +68,9 @@ alias bower='bower install'
 # XClip (command output to clipboard)
 alias clip="xclip -selection c"
 
+# Docker
+alias n4jdocker="docker run -p 7474:7474 --rm neo4j"
+
 function gcheatfn () { catcheat | grep $1 }
 alias gcheat=gcheatfn
 
